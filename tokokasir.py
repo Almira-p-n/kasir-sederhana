@@ -37,7 +37,7 @@ while run:
     if kode == kode:
         keranjang[kode] += 1
 
-    print("\n Ingin membeli barang lagi? y/t")
+    print("\n Ingin membeli barang lagi? (y/t)")
     lagi = input()
     if lagi != "y":
         run = False
