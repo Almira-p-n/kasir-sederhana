@@ -141,4 +141,5 @@ else:
         print("Uang pas, tidak ada kembalian")
 
 print("Terimakasih sudah berbelanja di toko kami!")
+
 time.sleep(2)
