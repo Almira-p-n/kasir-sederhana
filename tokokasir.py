@@ -5,6 +5,7 @@ import time
 Bproduk = ["Beras", "Air Mineral", "Minyak", "Es Krim", "Gula", "Garam", "Mie Instan", "Pasta Gigi", "Sikat Gigi", "Deterjen"]
 Hproduk = [65000, 3000, 10000, 4000, 27000, 2000, 3000, 8000, 5000, 20000]
 keranjang = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 # diskon
 diskontigaratus = 15
 diskonseratus = 5
