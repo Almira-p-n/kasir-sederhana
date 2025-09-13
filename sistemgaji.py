@@ -8,13 +8,16 @@ potongankes = 2
 gajibersih = 0
 gajiperbulan = 0
 
+# pembukaan
+print("Selamat datang di sistem perhitungan gaji")
+
 # loop
 run = True
 while run:
     # input nama
-    print("Masukkan nama karyawan")
-    namakaryawan = input()
-    print("Halo!", namakaryawan)
+    print("Masukkan nama anda")
+    nama = input()
+    print("Halo!", nama)
 
     # input gaji
     print("Masukkan gaji perbulan")
