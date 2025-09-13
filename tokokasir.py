@@ -12,11 +12,13 @@ diskonseratus = 5
 
 # pembukaan
 print("Selamat datang di toko kami!\n")
+time.sleep(0.7)
 
 # tuku-tuku
 run = True
 while run:
     print("Silahkan pilih kode barang yang akan dibeli")
+    time.sleep(0.7)
 
     print(
     "0.", Bproduk[0], ":", Hproduk[0],"\n" 
@@ -30,17 +32,24 @@ while run:
     "8.", Bproduk[8], ":", Hproduk[8],"\n"
     "9.", Bproduk[9], ":", Hproduk[9])
 
+    time.sleep(0.7)
+
     print("Silahkan masukkan kode barang yang akan dibeli:")
+    time.sleep(0.7)
 
     #-----------#
     kode = int(input())
     if kode == kode:
         keranjang[kode] += 1
 
+    time.sleep(0.7)
+
     print("\n Ingin membeli barang lagi? (y/t)")
     lagi = input()
     if lagi != "y":
         run = False
+    
+    time.sleep(0.7)
 
 # total
 total = (Hproduk[0] * keranjang[0] +
@@ -55,90 +64,111 @@ total = (Hproduk[0] * keranjang[0] +
          Hproduk[9] * keranjang[9])
 
 print("Total belanjaan anda:\n", total)
+time.sleep(0.7)
 
 # bayar
 # total belanja lebih dari 300000
 if total >= 300000:
     if total > 300000:
         print("Belanjaan anda melebihi 300000, Anda akan mendapatkan diskon 15%")
+        time.sleep(0.7)
     else:
         print("Belanjaan anda mencapai 300000, Anda akan mendapatkan diskon 15%")
+        time.sleep(0.7)
 
     # dapat diskon
     diskontigaratus = total * diskontigaratus / 100
     print("Total diskon yang anda dapatkan:", diskontigaratus)
+    time.sleep(0.7)
 
     # total setelah diskon
     diskontotal = total - diskontigaratus
     print("Total harga setelah diskon:", diskontotal)
+    time.sleep(0.7)
 
     # bayar!!
     print("Silahkan bayar sesuai total harga")
+    time.sleep(0.7)
     # kalo uangnya kurang
     run = True
     while run:
         bayar = int(input())
         if bayar < diskontotal:
             print("Uang anda kurang, bayar sesuai dengan total:", diskontotal)
+            time.sleep(0.7)
         else:
             run = False
     # kalo uangnya lebih
     if bayar > diskontotal:
         kembalian = bayar - diskontotal
         print("Kembalian anda:", kembalian)
+        time.sleep(0.7)
     else:
         print("Uang pas, tidak ada kembalian")
+        time.sleep(0.7)
 
 # total belanja lebih dari 100000
 elif total >= 100000 and total < 300000:
     if total > 100000:
         print("Belanjaan anda melebihi 100000, Anda akan mendapatkan diskon 5%")
+        time.sleep(0.7)
     else:
         print("Belanjaan anda mencapai 100000, Anda akan mendapatkan diskon 5%")
+        time.sleep(0.7)
 
     # dapat diskon
     diskonseratus = total * diskonseratus / 100
     print("Total diskon yang anda dapatkan:", diskonseratus)
+    time.sleep(0.7)
 
     # total setelah diskon
     diskontotal = total - diskonseratus
     print("Total harga setelah diskon:", diskontotal)
+    time.sleep(0.7)
 
     # bayar!!
     print("Silahkan bayar sesuai total harga")
+    time.sleep(0.7)
     # kalo uangnya kurang
     run = True
     while run:
         bayar = int(input())
         if bayar < diskontotal:
             print("Uang anda kurang, bayar sesuai dengan total:", diskontotal)
+            time.sleep(0.7)
         else:
             run = False
     # kalo uangnya lebih
     if bayar > diskontotal:
         kembalian =  bayar - diskontotal
         print("Kembalian anda:", kembalian)
+        time.sleep(0.7)
     else:
         print("Uang pas, tidak ada kembalian")
+        time.sleep(0.7)
 
 # total belnja kurang dari 100000 dan 300000
 else:
     # bayar!!
     print("Silahkan bayar sesuai total harga")
+    time.sleep(0.7)
     # kalo uangnya kurang
     run = True
     while run:
         bayar = int(input())
         if bayar < total:
             print("Uang anda kurang, bayar sesuai dengan total:", total)
+            time.sleep(0.7)
         else:
             run = False
     # kalo uangnya lebih
     if bayar > total:
         kembalian = bayar - total
         print("Kembalian anda:", kembalian)
+        time.sleep(0.7)
     else:
         print("Uang pas, tidak ada kembalian")
+        time.sleep(0.7)
 
 print("Terimakasih sudah berbelanja di toko kami!")
 
